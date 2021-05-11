@@ -146,6 +146,7 @@ type Token struct {
 	RefreshToken string    `json:"refresh_token"`
 	TokenType    string    `json:"token_type"`
 	Scope        string    `json:"scope"`
+	ExpiresIn    int64     `json:"expires_in"`
 	Expiry       time.Time `json:"expiration"`
 
 	// Fields present when ResponseTypeUAA is set
